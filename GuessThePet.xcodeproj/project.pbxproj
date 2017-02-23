@@ -21,6 +21,7 @@
 		BB3B33DD1B4064E600B5C810 /* PetCardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3B33DC1B4064E600B5C810 /* PetCardStore.swift */; };
 		CB812A9E1E5F7142007921E9 /* FlipPresentAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB812A9D1E5F7142007921E9 /* FlipPresentAnimationController.swift */; };
 		CB812AA01E5F807A007921E9 /* FlipDismissAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB812A9F1E5F807A007921E9 /* FlipDismissAnimationController.swift */; };
+		CB812AA21E5F903F007921E9 /* SwipeInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB812AA11E5F903F007921E9 /* SwipeInteractionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		BB3B33DC1B4064E600B5C810 /* PetCardStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetCardStore.swift; sourceTree = "<group>"; };
 		CB812A9D1E5F7142007921E9 /* FlipPresentAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlipPresentAnimationController.swift; path = "GuessThePet/Animation controllers/FlipPresentAnimationController.swift"; sourceTree = SOURCE_ROOT; };
 		CB812A9F1E5F807A007921E9 /* FlipDismissAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlipDismissAnimationController.swift; path = "GuessThePet/Animation controllers/FlipDismissAnimationController.swift"; sourceTree = SOURCE_ROOT; };
+		CB812AA11E5F903F007921E9 /* SwipeInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwipeInteractionController.swift; path = "GuessThePet/Animation controllers/SwipeInteractionController.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			children = (
 				CB812A9D1E5F7142007921E9 /* FlipPresentAnimationController.swift */,
 				CB812A9F1E5F807A007921E9 /* FlipDismissAnimationController.swift */,
+				CB812AA11E5F903F007921E9 /* SwipeInteractionController.swift */,
 			);
 			path = "Interaction controllers";
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				BB3B33A81B40386700B5C810 /* AppDelegate.swift in Sources */,
 				BB3B33D81B4049EC00B5C810 /* ViewControllerProvider.swift in Sources */,
 				BB3B33D11B4039FB00B5C810 /* CardViewController.swift in Sources */,
+				CB812AA21E5F903F007921E9 /* SwipeInteractionController.swift in Sources */,
 				BB3B33CF1B4039A600B5C810 /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

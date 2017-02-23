@@ -34,6 +34,7 @@ class CardViewController: UIViewController {
     
     fileprivate let flipPresentAnimationController = FlipPresentAnimationController()
     fileprivate let flipDismissAnimationController = FlipDismissAnimationController()
+    fileprivate let swipeInteractionController = SwipeInteractionController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +50,8 @@ class CardViewController: UIViewController {
         if segue.identifier == revealSequeId, let destinationViewController = segue.destination as? RevealViewController {
             destinationViewController.petCard = petCard
             destinationViewController.transitioningDelegate = self
+            
+            swipeInteractionController.wireToViewController(destinationViewController)
         }
     }
     
@@ -68,4 +71,14 @@ extension CardViewController: UIViewControllerTransitioningDelegate {
         flipDismissAnimationController.destinationFrame = cardView.frame
         return flipDismissAnimationController
     }
+    
+    func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        
+        return swipeInteractionController.interactionInProgress ? swipeInteractionController : nil
+    }
 }
+
+
+
+
+
